@@ -1,28 +1,6 @@
 {
   "hooks": {
-    "PreToolUse": [
-      {
-        "_claudeaware": true,
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"${CLAUDE_PROJECT_DIR}/.claude/claudeaware-hook.sh\" begin-edit"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "_claudeaware": true,
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"${CLAUDE_PROJECT_DIR}/.claude/claudeaware-hook.sh\" end-edit"
-          }
-        ]
-      }
-    ]
+    "PreToolUse": [],
+    "PostToolUse": []
   }
 }
